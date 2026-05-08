@@ -90,14 +90,27 @@
             margin: 12px 0;
         }
         button:hover, .btn:hover { background: #c15a2c; }
+        .counties {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 12px;
+        }
+        .county {
+            background: var(--sand);
+            padding: 14px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 600;
+            color: var(--navy);
+            border: 2px solid var(--orange);
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <!-- Updated paths based on your repo -->
             <img src="OFIH_Logo_Wordmark_Color.png" alt="Oregon Frontier Innovation Hub" class="logo-wordmark">
-            <img src="carter-photo.jpg.jpg" alt="Carter Gudell" class="photo">
+            <img src="carter-photo.jpg" alt="Carter Gudell" class="photo">
             <div>
                 <h1>Carter Gudell</h1>
                 <p class="title">Entrepreneurial Ecosystem Builder</p>
