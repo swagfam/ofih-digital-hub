@@ -7,22 +7,22 @@
     <style>
         @font-face {
             font-family: 'Cabin';
-            src: url('cabin/cabin/Cabin-Regular.ttf') format('truetype');
+            src: url('Cabin-Regular.ttf') format('truetype');
             font-weight: 400;
         }
         @font-face {
             font-family: 'Cabin';
-            src: url('cabin/cabin/Cabin-Medium.ttf') format('truetype');
+            src: url('Cabin-Medium.ttf') format('truetype');
             font-weight: 500;
         }
         @font-face {
             font-family: 'Cabin';
-            src: url('cabin/cabin/Cabin-SemiBold.ttf') format('truetype');
+            src: url('Cabin-SemiBold.ttf') format('truetype');
             font-weight: 600;
         }
         @font-face {
             font-family: 'Cabin';
-            src: url('cabin/cabin/Cabin-Bold.ttf') format('truetype');
+            src: url('Cabin-Bold.ttf') format('truetype');
             font-weight: 700;
         }
         :root {
@@ -67,22 +67,42 @@
         .contact-block, .section, .attribution {
             border: 3px solid var(--orange);
         }
-        /* Rest of your styling stays the same as last version */
-        /* ... (keeping it short) */
+        h1 { color: black; margin: 0 0 4px 0; font-size: 2.73rem; font-weight: 700; }
+        .title { font-size: 1.3rem; margin: 0; color: var(--orange); }
+        .section {
+            background: var(--navy);
+            color: white;
+            margin: 20px 0;
+            padding: 28px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        button, .btn {
+            background: var(--orange);
+            color: white;
+            border: 3px solid black;
+            padding: 16px 32px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            margin: 12px 0;
+        }
+        button:hover, .btn:hover { background: #c15a2c; }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <img src="PNG/PNG/OFIH_Logo_Wordmark_Color.png" alt="Oregon Frontier Innovation Hub" class="logo-wordmark" onerror="this.src='https://via.placeholder.com/380x100/ E9D4B1/4E5C85?text=OFIH+Logo';">
-            <img src="carter-photo.jpg" alt="Carter Gudell" class="photo" onerror="this.style.display='none';">
+            <img src="OFIH_Logo_Wordmark_Color.png" alt="Oregon Frontier Innovation Hub" class="logo-wordmark">
+            <img src="carter-photo.jpg" alt="Carter Gudell" class="photo">
             <div>
                 <h1>Carter Gudell</h1>
                 <p class="title">Entrepreneurial Ecosystem Builder</p>
             </div>
         </header>
 
-        <!-- Rest of the page (same as previous version) -->
         <div class="contact-block">
             <p style="margin:0 0 8px 0;"><strong>Cell:</strong> +1 (860) 899-8395</p>
             <p style="margin:0 0 8px 0;"><strong>Office:</strong> 541-962-3012</p>
@@ -93,7 +113,32 @@
             The Oregon Frontier Innovation Hub is a Rural Engagement and Vitality Center initiative made possible by support from Business Oregon.
         </div>
 
-        <!-- Mission, Counties, How We Help, and the single button section remain the same as last code -->
+        <div class="section">
+            <h2>Our Mission</h2>
+            <p>We help innovation-based entrepreneurs across Eastern Oregon’s 10 counties turn bold ideas into growing, traded-sector businesses. We connect you with technical assistance, capital, mentors, networking, talent, and partners — right where you are.</p>
+        </div>
+
+        <div class="section">
+            <h2>The 10 Counties We Serve</h2>
+            <div class="counties">
+                <div class="county">Baker</div><div class="county">Gilliam</div><div class="county">Grant</div>
+                <div class="county">Harney</div><div class="county">Malheur</div><div class="county">Morrow</div>
+                <div class="county">Umatilla</div><div class="county">Union</div><div class="county">Wallowa</div>
+                <div class="county">Wheeler</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>How We Help</h2>
+            <ul style="font-size:1.1rem; padding-left:22px;">
+                <li>One-on-one technical assistance & navigation</li>
+                <li>Access to capital & grant support</li>
+                <li>Personalized mentorship & Entrepreneur-in-Residence connections</li>
+                <li>Networking events & ecosystem partnerships</li>
+                <li>Talent development & job creation support</li>
+            </ul>
+            <a href="https://calendly.com/cgudell-revcenter/30min" target="_blank" class="btn" style="text-decoration:none; display:block; text-align:center;">Book a Call With Me</a>
+        </div>
 
         <div class="section">
             <h2 style="text-align:center;">Get Connected or Refer Someone</h2>
@@ -102,11 +147,15 @@
                 Introduce Yourself / Refer a Business, Mentor or Resource
             </a>
         </div>
+
+        <p style="text-align:center; font-size:0.95rem; color:#333; margin:40px 0 20px;">
+            Questions? Just reply — we're here to help Eastern Oregon entrepreneurs succeed.
+        </p>
     </div>
 
     <script>
         window.onload = function() {
-            console.log('%c✅ OFIH Digital Hub live on GitHub!', 'color:#d96c35; font-weight:600;');
+            console.log('%c✅ OFIH Digital Hub live!', 'color:#d96c35; font-weight:600;');
         };
     </script>
 </body>
