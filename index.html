@@ -123,9 +123,9 @@
             <p><strong>Office:</strong> 541-962-3012</p>
             <p>cgudell@revcenter.org • www.revcenter.org</p>
             
-            <!-- NEW: Save Contact Button -->
+            <!-- Updated button text + improved mobile support -->
             <button onclick="downloadVCF()" style="margin-top: 15px;">
-                💾 Save My Contact (vCard)
+                💾 Save My Contact
             </button>
         </div>
 
@@ -182,13 +182,13 @@ EMAIL;TYPE=WORK:cgudell@revcenter.org
 URL:https://swagfam.github.io/ofih-digital-hub/
 END:VCARD`;
 
-            const blob = new Blob([vcard], { type: 'text/vcard' });
-            const url = URL.createObjectURL(blob);
+            const dataUri = 'data:text/vcard;charset=utf-8,' + encodeURIComponent(vcard);
             const link = document.createElement('a');
-            link.href = url;
+            link.href = dataUri;
             link.download = 'Carter_Gudell_OFIH.vcf';
+            document.body.appendChild(link);
             link.click();
-            URL.revokeObjectURL(url);
+            document.body.removeChild(link);
         }
     </script>
 </body>
