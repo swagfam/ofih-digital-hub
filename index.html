@@ -43,7 +43,7 @@
             line-height: 1.6;
         }
         .container { 
-            max-width: 900px; 
+            max-width: 920px; 
             margin: 20px auto; 
             padding: 0 15px; 
         }
@@ -76,7 +76,7 @@
             color: white;
             border: 3px solid var(--orange);
             border-radius: 12px;
-            padding: 22px;
+            padding: 24px;
             margin: 20px 0;
             text-align: center;
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -111,13 +111,12 @@
             border: 2px solid var(--orange);
         }
 
-        /* Improved Embed Styling */
-        .embed-container {
-            width: 100%;
-            padding: 0;
-            margin: 0;
+        /* Better Embed Container */
+        .embed-wrapper {
             background: white;
             border-radius: 8px;
+            padding: 4px;
+            margin-top: 16px;
             overflow: hidden;
         }
     </style>
@@ -132,20 +131,19 @@
                 <p class="title">Entrepreneurial Ecosystem Builder</p>
             </div>
         </header>
+
         <div class="contact-block">
             <p><strong>Cell:</strong> +1 (860) 899-8395</p>
             <p><strong>Office:</strong> 541-962-3012</p>
             <p>cgudell@revcenter.org • www.revcenter.org</p>
-            
-            <button onclick="downloadVCF()" style="margin-top: 15px;">
-                💾 Save My Contact
-            </button>
+            <button onclick="downloadVCF()" style="margin-top: 15px;">💾 Save My Contact</button>
         </div>
 
         <div class="section">
             <h2>Our Mission</h2>
             <p>We help innovation-based entrepreneurs across Eastern Oregon’s 10 counties turn bold ideas into growing, traded-sector businesses. We connect you with technical assistance, capital, mentors, networking, talent, and partners — right where you are.</p>
         </div>
+
         <div class="section">
             <h2>The 10 Counties We Serve</h2>
             <div class="counties">
@@ -155,6 +153,7 @@
                 <div class="county">Wheeler</div>
             </div>
         </div>
+
         <div class="section">
             <h2>How We Help</h2>
             <ul style="font-size:1.1rem; padding-left:22px;">
@@ -166,6 +165,7 @@
             </ul>
             <a href="https://calendly.com/cgudell-revcenter/30min" target="_blank" class="btn" style="text-decoration:none; display:block; text-align:center;">Book a Call With Me</a>
         </div>
+
         <div class="section">
             <h2 style="text-align:center;">Get Connected or Refer Someone</h2>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9sDNoQCa79VB_P9yo1rIML0vf1FB7EujbusTfIUDsT36xHQ/viewform?usp=header"
@@ -174,10 +174,10 @@
             </a>
         </div>
 
-        <!-- Regional Resources Box -->
+        <!-- Regional Resources -->
         <div class="section">
             <h2 style="text-align:center;">Regional Resources</h2>
-            <div class="embed-container">
+            <div class="embed-wrapper">
                 <div data-embed-container="eb33bc05-a80b-450d-8a15-7dcf711da907"></div>
             </div>
         </div>
