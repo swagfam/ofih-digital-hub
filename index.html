@@ -42,7 +42,11 @@
             padding: 0;
             line-height: 1.6;
         }
-        .container { max-width: 820px; margin: 20px auto; padding: 0 20px; }
+        .container { 
+            max-width: 900px; /* Widened by ~10% */
+            margin: 20px auto; 
+            padding: 0 15px; 
+        }
        
         header {
             background: var(--sand);
@@ -72,7 +76,7 @@
             color: white;
             border: 3px solid var(--orange);
             border-radius: 12px;
-            padding: 18px;
+            padding: 22px; /* Slightly increased internal padding */
             margin: 20px 0;
             text-align: center;
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -160,7 +164,7 @@
             </a>
         </div>
 
-        <!-- New Regional Resources Box -->
+        <!-- Regional Resources Box -->
         <div class="section">
             <h2 style="text-align:center;">Regional Resources</h2>
             <div data-embed-container="eb33bc05-a80b-450d-8a15-7dcf711da907"></div>
@@ -198,7 +202,6 @@ END:VCARD`;
         }
     </script>
 
-    <!-- Regional Resources Embed Script -->
     <script type="module">
       import { addEmbed } from "https://app.ecomap.tech/add_embed.js";
       addEmbed("https://app.ecomap.tech/asset_collection_embeds/eb33bc05-a80b-450d-8a15-7dcf711da907", "[data-embed-container='eb33bc05-a80b-450d-8a15-7dcf711da907']");
