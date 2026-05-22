@@ -43,7 +43,7 @@
             line-height: 1.6;
         }
         .container { 
-            max-width: 900px; /* Widened by ~10% */
+            max-width: 900px; 
             margin: 20px auto; 
             padding: 0 15px; 
         }
@@ -76,7 +76,7 @@
             color: white;
             border: 3px solid var(--orange);
             border-radius: 12px;
-            padding: 22px; /* Slightly increased internal padding */
+            padding: 22px;
             margin: 20px 0;
             text-align: center;
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -109,6 +109,16 @@
             font-weight: 600;
             color: var(--navy);
             border: 2px solid var(--orange);
+        }
+
+        /* Improved Embed Styling */
+        .embed-container {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
         }
     </style>
 </head>
@@ -167,7 +177,9 @@
         <!-- Regional Resources Box -->
         <div class="section">
             <h2 style="text-align:center;">Regional Resources</h2>
-            <div data-embed-container="eb33bc05-a80b-450d-8a15-7dcf711da907"></div>
+            <div class="embed-container">
+                <div data-embed-container="eb33bc05-a80b-450d-8a15-7dcf711da907"></div>
+            </div>
         </div>
 
         <div class="attribution">
